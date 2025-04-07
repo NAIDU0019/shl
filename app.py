@@ -1,5 +1,16 @@
+import asyncio  # ✅ Added for event loop fix
+import os       # ✅ Optional: for setting environment variables
 import streamlit as st
 from core.recommender import ProductRecommender
+
+# ✅ Fix: Ensure there's a running event loop
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
+
+# ✅ Optional: Handle Hugging Face offline mode (uncomment if needed)
+# os.environ["TRANSFORMERS_OFFLINE"] = "1"
 
 # App Config (must be the first Streamlit command)
 st.set_page_config(
