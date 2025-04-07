@@ -1,0 +1,14 @@
+[
+    {
+        "title": "SHL Cognitive Ability Test",
+        "description": "Assesses numerical, verbal, and logical reasoning for analytical roles."
+    },
+    {
+        "title": "SHL Personality Assessment",
+        "description": "Evaluates behavioral traits and cultural fit for team-based environments."
+    },
+    {
+        "title": "SHL Technical Test",
+        "description": "Measures knowledge in coding, debugging, and engineering principles."
+    }
+]

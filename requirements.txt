@@ -1,0 +1,7 @@
+streamlit
+pandas
+playwright
+sentence-transformers
+scikit-learn
+beautifulsoup4
+tqdm
