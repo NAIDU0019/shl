@@ -9,7 +9,8 @@ class ProductRecommender:
     def __init__(self, product_data_path: str = "data/shl_products_clean.csv"):
         self.logger = logging.getLogger(__name__)
         self.df = self._load_and_validate_data(product_data_path)
-        self.model = SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
+        self.model = SentenceTransformer("local_model", device="cpu")
+
         self._prepare_embeddings()
     
     def _load_and_validate_data(self, path: str) -> pd.DataFrame:
